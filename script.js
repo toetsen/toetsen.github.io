@@ -31,7 +31,7 @@ function checkKeyDown(e) {
 
 			document.getElementById("textbox").style.display = "none";
 			document.getElementById("info").style.display = "block";
-			document.getElementById("info").innerHTML += "Je hebt " + document.getElementById("textbox").value.length + " characters getypt in " + time.toFixed(3) +  " seconden, dat is gemiddeld " + (document.getElementById("textbox").value.length/time).toFixed(3) + " characters per seconde.";
+			document.getElementById("info").innerHTML += "Je hebt " + document.getElementById("textbox").value.length + " karakters getypt in " + time.toFixed(3) +  " seconden, dat is gemiddeld " + (document.getElementById("textbox").value.length/time).toFixed(3) + " characters per seconde.";
 			document.getElementById("textbox").value = "";
 			setTimeout(type, intervals[count]);
 		}
