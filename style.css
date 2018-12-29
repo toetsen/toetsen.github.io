@@ -1,0 +1,41 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#div {
+	display: block;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 98vw;
+	height: 94vh;
+	margin-top: 5vh;
+	margin-left: 1vw;
+	border: 1px solid black; 
+	text-overflow: hidden;
+}
+
+#textbox {
+	display: block;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	height: 3vh;
+	width: 20vw;
+	margin-left: 1vw;
+	margin-top: 1vh;
+	border: 1px solid black;
+	outline: none;
+}
+
+#info {
+	display: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	height: 3vh;
+	width: 98vw;
+	margin-left: 1vw;
+	margin-top: 1vh;
+}
