@@ -4,6 +4,7 @@ var timer = ".";
 var count = 0;
 var wait = false;
 var time = 0;
+var timeout;
 
 document.onkeydown = checkKeyDown;
 
@@ -43,7 +44,7 @@ function type(){
 	document.getElementById("div").innerHTML += text[count];
 	count++;
 	if(count<text.length){
-		setTimeout(type, intervals[count]);
+		timeout = setTimeout(type, intervals[count]);
 	}
 }
 
@@ -58,4 +59,5 @@ function end(){
 	count = 0;
 	time = 0;
 	document.getElementById("div").innerHTML += "<br><br>";
+	clearTimeout(timeout);
 }
